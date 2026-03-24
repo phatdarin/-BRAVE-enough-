@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden; 
+    flex-direction: column;
+    background-color: white;
+    transition: background 0.5s ease;
+    /*justify-content: center; กลางแนวตั้ง, align-items: center; กลางแนวนอน */
+}
+
+.Title {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    color: black; /* เริ่มต้นสีดำ */
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+.Title.white-active {
+    color: white;
+    text-shadow: 0 0 5px #fff, 0 0 10px #99d1a4; 
+}
+
+
+.Main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.Rocky {
+    position: relative;
+    display: flex;
+    transform: scale(1.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.pixel {
+    background-color: #a38f85;
+    background-size: 1rem 1rem;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    margin: 5rem auto;
+    box-shadow:
+    /*row 0*/
+    -4rem 0rem 0 -0.03rem #a38f85,
+    -3rem 0rem 0 -0.03rem #a38f85,
+    -2rem 0rem 0 -0.03rem #a38f85,
+    -1rem 0rem 0 -0.03rem #a38f85,
+    0rem 0rem 0 -0.03rem #a38f85,
+    1rem 0rem 0 -0.03rem #a38f85,
+    2rem 0rem 0 -0.03rem #a38f85,
+    3rem 0rem 0 -0.03rem #a38f85,
+    4rem 0rem 0 -0.03rem #a38f85,
+    5rem 0rem 0 -0.03rem #a38f85,
+
+    /*row 1*/
+    -5rem 1rem 0 -0.03rem #a38f85,
+    -4rem 1rem 0 -0.03rem #a38f85,
+    -3rem 1rem 0 -0.03rem #a38f85,
+    -2rem 1rem 0 -0.03rem #a38f85,
+    -1rem 1rem 0 -0.03rem #a38f85,
+    0rem 1rem 0 -0.03rem #a38f85,
+    1rem 1rem 0 -0.03rem #a38f85,
+    2rem 1rem 0 -0.03rem #a38f85,
+    3rem 1rem 0 -0.03rem #a38f85,
+    4rem 1rem 0 -0.03rem #a38f85,
+    5rem 1rem 0 -0.03rem #a38f85,
+    6rem 1rem 0 -0.03rem #a38f85,
+
+    /*row 2*/
+    0rem -0rem 0 -0.03rem #513229,
+    -6rem 2rem 0 -0.03rem #a38f85,
+    -5rem 2rem 0 -0.03rem #a38f85,
+    -4rem 2rem 0 -0.03rem #a38f85,
+    -3rem 2rem 0 -0.03rem #a38f85,
+    -2rem 2rem 0 -0.03rem #a38f85,
+    -1rem 2rem 0 -0.03rem #a38f85,
+    0rem 2rem 0 -0.03rem #a38f85,
+    1rem 2rem 0 -0.03rem #a38f85,
+    2rem 2rem 0 -0.03rem #a38f85,
+    3rem 2rem 0 -0.03rem #a38f85,
+    4rem 2rem 0 -0.03rem #a38f85,
+    5rem 2rem 0 -0.03rem #a38f85,
+    6rem 2rem 0 -0.03rem #a38f85,
+    7rem 2rem 0 -0.03rem #a38f85,
+
+    /*row 3*/
+    -6rem 3rem 0 -0.03rem #99945d,
+    -5rem 3rem 0 -0.03rem #a38f85,
+    -4rem 3rem 0 -0.03rem #a38f85,
+    -3rem 3rem 0 -0.03rem #a38f85,
+    -2rem 3rem 0 -0.03rem #a38f85,
+    -1rem 3rem 0 -0.03rem #a38f85,
+    0rem 3rem 0 -0.03rem #a38f85,
+    1rem 3rem 0 -0.03rem #a38f85,
+    2rem 3rem 0 -0.03rem #a38f85,
+    3rem 3rem 0 -0.03rem #a38f85,
+    4rem 3rem 0 -0.03rem #a38f85,
+    5rem 3rem 0 -0.03rem #a38f85,
+    6rem 3rem 0 -0.03rem #a38f85,
+    7rem 3rem 0 -0.03rem #99945d,
+
+
+    /*row 4*/
+    -4rem 4rem 0 -0.03rem #a38f85,
+    -3rem 4rem 0 -0.03rem #a38f85,
+    -2rem 4rem 0 -0.03rem #a38f85,
+    -1rem 4rem 0 -0.03rem #a38f85,
+    0rem 4rem 0 -0.03rem #a38f85,
+    1rem 4rem 0 -0.03rem #a38f85,
+    2rem 4rem 0 -0.03rem #a38f85,
+    3rem 4rem 0 -0.03rem #a38f85,
+    4rem 4rem 0 -0.03rem #a38f85,
+    5rem 4rem 0 -0.03rem #a38f85,
+
+    /*row 5*/
+    -3rem 5rem 0 -0.03rem #a38f85,
+    -2rem 5rem 0 -0.03rem #a38f85,
+    -1rem 5rem 0 -0.03rem #a38f85,
+    0rem 5rem 0 -0.03rem #a38f85,
+    1rem 5rem 0 -0.03rem #a38f85,
+    2rem 5rem 0 -0.03rem #a38f85,
+    3rem 5rem 0 -0.03rem #a38f85,
+    4rem 5rem 0 -0.03rem #a38f85,
+
+    /*row 6*/
+    -2rem 6rem 0 -0.03rem #a38f85,
+    -1rem 6rem 0 -0.03rem #a38f85,
+    0rem 6rem 0 -0.03rem #a38f85,
+    1rem 6rem 0 -0.03rem #a38f85,
+    2rem 6rem 0 -0.03rem #a38f85,
+    3rem 6rem 0 -0.03rem #a38f85,
+
+    /*row 7*/
+    -1rem 7rem 0 -0.03rem #cec6c2,
+    0rem 7rem 0 -0.03rem #cec6c2,
+    1rem 7rem 0 -0.03rem #cec6c2,
+    2rem 7rem 0 -0.03rem #cec6c2;
+}
+
+
+.legs {
+    position: absolute;
+    background: transparent;
+    width: 20px;
+    height: 40px;
+    z-index: 11;
+
+}
+
+.legs::before {
+    position: absolute;
+    content:"";
+    width: 15px;
+    height: 100px;
+    top: 77px;
+    left: -93px;
+    background: #a38f85;
+    transform-origin: top center; /* จุดหมุน */
+    animation: tapLeg 0.6s infinite ease-in-out;
+
+}
+
+.legs::after {
+    position: absolute;
+    content:"";
+    width: 15px;
+    height: 100px;
+    top: 77px;
+    left: 115px;
+    background: #a38f85;
+}
+
+/*@keyframes tapLeg {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); /* ลง = เคาะ */
+
+
+.arms {
+    position: absolute;
+    background: transparent;
+    width: 20px;
+    height: 40px;
+    z-index: 11;
+   
+}
+
+.arms::before {
+    position: absolute;
+    content:"";
+    width: 14.8px;
+    height: 63px;
+    top: 93px;
+    left: -61px;
+    background: #a38f85;
+}
+
+.arms::after {
+    position: absolute;
+    content:"";
+    width: 15px;
+    height: 63px;
+    top: 93px;
+    left: 83px;
+    background: #a38f85;
+}
+
+.rocky-full {
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%) scale(2);
+    display: none; /* ซ่อนก่อน */
+    width: 80vw; 
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+    z-index: 20;
+    pointer-events: none;
+}
+
+.Rocky.hide {
+    display: none;
+}
+.input-box { 
+    position: absolute; 
+    top: calc(50% + 200px); 
+    left: 50%; transform: 
+    translateX(-50%); 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.input-box input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #4c9db0;
+    outline: none;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+.checkpoint {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #aaccb1;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.checkpoint:hover {
+    transform: scale(1.1);
+}
+
+.speech {
+    position: fixed;
+    top: 15%;
+    left:77%;
+    transform: translateX(-50%);
+    line-height: 1.4;
+    padding: 10px 14px;
+    min-width: 120px;
+    text-align: center;
+    font-size: 20px;
+    max-width: 200px; /* จำกัดความกว้าง */
+    word-wrap: break-word;/* ตัดคำ */
+    overflow-wrap: break-word;
+    white-space: normal; /* ให้ขึ้นบรรทัดใหม่ได้ */
+    font-family: 'Space Mono', monospace;
+    color: white;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #99d1a4;
+    z-index: 30;
+
+}
+
+@keyframes blinkGlow {
+    0%, 100% {
+        opacity: 1;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #99d1a4;
+    }
+    50% {
+        opacity: 0.6;
+        text-shadow: 0 0 10px #fff, 0 0 20px #99d1a4, 0 0 30px #99d1a4;
+    }
+}
+
+.blink {
+    animation: blinkGlow 0.6s ease-in-out 3; /* กระพริบ 3 ครั้ง */
+}
+
+.bg-active {
+    background-image: url('bg.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+}
